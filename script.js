@@ -132,8 +132,9 @@ $(function() {
       el.srcObject = stream;
       el.play();
 
-            const video = document.getElementById('video');
+      const video = document.getElementById('video');
       const togglePipButton = document.getElementById('togglePipButton');
+      console.log(video);
 
       // Hide button if Picture-in-Picture is not supported or disabled.
 
