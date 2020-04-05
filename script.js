@@ -134,7 +134,7 @@ $(function() {
 
       const video = document.getElementById('video');
       const togglePipButton = document.getElementById('togglePipButton');
-      console.log(video);
+      console.log(video + 'aaa');
 
       // Hide button if Picture-in-Picture is not supported or disabled.
 
