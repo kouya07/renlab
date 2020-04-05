@@ -44,24 +44,6 @@ $(function() {
     step1();
   });
 
-
-  const video = document.getElementById('video');
-  const pipButton = document.getElementById('pipButton');
-
-  if ('pictureInPictureEnabled' in document) {
-    pipButton.classList.remove('hidden')
-    pipButton.disabled = false;
-  }
-
-  if ('pictureInPictureEnabled' in document) {
-    pipButton.classList.remove('hidden')
-    pipButton.disabled = false;
-
-    pipButton.addEventListener('click', () => {
-      video.requestPictureInPicture();
-    });
-  }
-
   // set up audio and video input selectors
   const audioSelect = $('#audioSource');
   const videoSelect = $('#videoSource');
