@@ -136,8 +136,6 @@ $(function() {
       const togglePipButton = document.getElementById('togglePipButton');
 
       // Hide button if Picture-in-Picture is not supported or disabled.
-      togglePipButton.hidden = !document.pictureInPictureEnabled ||
-        video.disablePictureInPicture;
 
       togglePipButton.addEventListener('click', function() {
         // If there is no element in Picture-in-Picture yet, let’s request
@@ -154,7 +152,7 @@ $(function() {
           });
         }
       });
-      
+
     });
 
     room.on('removeStream', function(stream) {
